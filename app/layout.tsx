@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { poppins, volkhov } from "./fonts";
 import "./globals.css";
+import { Header } from "@/components";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${volkhov.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

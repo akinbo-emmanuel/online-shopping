@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-volkhov: 'Volkhov', serif;
+  }
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: var(--font-poppins);
+  }
+  .font-volkhov {
+    font-family: var(--font-volkhov);
+  }
+}
