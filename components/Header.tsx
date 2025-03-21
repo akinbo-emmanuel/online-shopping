@@ -44,10 +44,10 @@ const Header = () => {
   return (
     <>
       <header
-        className={`max-w-[95vw] 2xl:max-w-[1280px] mx-auto mt-16 flex items-center justify-between transition-all duration-300 ${
+        className={`2xl:max-w-[1280px] mx-auto mt-8 md:mt-16 flex items-center justify-between transition-all duration-300 ${
           isFixed
-            ? "fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-6"
-            : ""
+            ? "fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-6 max-w-[90vw]"
+            : "max-w-[95vw]"
         }`}
       >
         {/* Logo */}
