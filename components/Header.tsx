@@ -1,17 +1,10 @@
 "use client";
 
-import { LucideShoppingBag, Search, Star, User2, Menu, X } from "lucide-react";
+import { LucideShoppingBag, Search, Star, User2, Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "./ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
 
 const links = [
   {
@@ -31,7 +24,6 @@ const links = [
 const Header = () => {
   const pathname = usePathname();
   const [isFixed, setIsFixed] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,10 +40,6 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <>
@@ -136,11 +124,6 @@ const Header = () => {
           <Star />
           <LucideShoppingBag />
         </div>
-
-        {/* Mobile Menu (Overlay) */}
-        {isMenuOpen && (
-          <div className="lg:hidden fixed inset-0 bg-white z-50"></div>
-        )}
       </header>
 
       {/* Placeholder to prevent layout shift when header becomes fixed */}
