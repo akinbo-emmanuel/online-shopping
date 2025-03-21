@@ -3,6 +3,7 @@ import { poppins, volkhov } from "./fonts";
 import "./globals.css";
 import Header from "@/components/Header";
 import Shortcuts from "@/components/Shortcuts";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,6 +23,8 @@ export default function RootLayout({
 
         <Shortcuts />
       </body>
+
+      <Analytics />
     </html>
   );
 }
