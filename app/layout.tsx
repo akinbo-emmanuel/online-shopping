@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { poppins, volkhov } from "./fonts";
 import "./globals.css";
-import { Header } from "@/components";
+import Header from "@/components/Header";
+import Shortcuts from "@/components/Shortcuts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +19,8 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+
+        <Shortcuts />
       </body>
     </html>
   );
