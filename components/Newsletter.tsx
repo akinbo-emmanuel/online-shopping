@@ -38,7 +38,7 @@ const Newsletter = () => {
           }}
           type="text"
           placeholder="Enter your email"
-          className="p-7 w-full placeholder:text-[#8A8A8A] text-[#484848] text-xl outline-none"
+          className="p-7 w-full placeholder:text-[#8A8A8A] text-[#484848] lg:text-xl outline-none"
         />
         <button
           style={{ boxShadow: "0px 20px 35px 0px #00000026" }}
