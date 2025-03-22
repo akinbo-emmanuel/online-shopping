@@ -4,7 +4,7 @@ import React from "react";
 
 const Brands = () => {
   return (
-    <div className="max-w-[95vw] 2xl:max-w-[1280px] mx-auto flex flex-wrap gap-5 items-center justify-between my-20">
+    <div className="max-w-[95vw] 2xl:max-w-[1280px] mx-auto flex flex-wrap gap-5 items-center justify-between my-20 bg-white">
       {brands.map((brand, index) => (
         <Image
           key={index}

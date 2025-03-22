@@ -29,7 +29,7 @@ const links = [
 ];
 
 const Footer = () => {
-  let currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="pt-8 pb-6 border-t border-[#DEDFE1] text-[#484848]">

@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="w-screen max-w-[95vw] 2xl:max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-9 mt-14 mb-7">
+    <section className="w-screen max-w-[95vw] 2xl:max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-9 mt-14 mb-7 bg-white">
       {/* Left Image (Hidden on Mobile) */}
       <Image
         src={heroLeft}
