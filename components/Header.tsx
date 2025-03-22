@@ -44,9 +44,9 @@ const Header = () => {
   return (
     <>
       <header
-        className={`mx-auto flex items-center justify-between transition-all duration-300 ${
+        className={`mx-auto flex items-center justify-between transition-all duration-300 bg-white ${
           isFixed
-            ? "fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-6 max-w-[90vw] 2xl:max-w-[1250px] rounded-full mt-4 md:mt-8"
+            ? "fixed top-0 left-0 right-0 z-50 shadow-md py-4 px-6 max-w-[90vw] 2xl:max-w-[1250px] rounded-full mt-4 md:mt-8"
             : "max-w-[95vw] 2xl:max-w-[1280px] mt-8 md:mt-16"
         }`}
       >

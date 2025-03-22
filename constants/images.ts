@@ -7,6 +7,8 @@ import heroLeft from "@/assets/images/heroLeft.png";
 import heroRight from "@/assets/images/heroRight.png";
 import heroTop from "@/assets/images/heroTop.png";
 import heroBottom from "@/assets/images/heroBottom.png";
+import newsletterLeft from "@/assets/images/newsletterLeft.png";
+import newsletterRight from "@/assets/images/newsletterRight.png";
 
 export {
   prada,
@@ -18,4 +20,6 @@ export {
   heroRight,
   heroTop,
   heroBottom,
+  newsletterLeft,
+  newsletterRight,
 };
