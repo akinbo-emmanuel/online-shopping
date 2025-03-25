@@ -123,7 +123,7 @@ const TestimonialCarousel = () => {
                 <div>
                   <div className="space-y-3.5 md:space-y-7">
                     <p className="text-[#484848] text-sm md:text-base leading-relaxed font-poppins">
-                      "{testimonial.text}"
+                      &apos;{testimonial.text}&apos;
                     </p>
                     <div className="flex gap-1 text-yellow-400 text-base md:text-xl">
                       {[...Array(5)].map((_, i) => (
