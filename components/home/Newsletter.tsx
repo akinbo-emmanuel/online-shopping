@@ -17,10 +17,10 @@ const Newsletter = () => {
 
       <div className="max-w-[631px] flex flex-col items-center gap-8">
         <div className="space-y-5">
-          <h3 className="text-2xl sm:text-[43px] md:text-[46px] xl:text-[38px] 2xl:text-[46px] text-[#484848] text-center font-volkhov">
+          <h3 className="text-2xl sm:text-[43px] md:text-[46px] xl:text-[38px] 2xl:text-[46px] leading-[100%] text-[#484848] text-center font-volkhov">
             Subscribe To Our Newsletter
           </h3>
-          <p className="text-xs md:text-base text-center text-[#8A8A8A] font-poppins">
+          <p className="text-xs md:text-base/[26px] text-center text-[#8A8A8A] font-poppins">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
             duis ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
             sollicitudin

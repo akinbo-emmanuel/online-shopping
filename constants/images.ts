@@ -9,6 +9,9 @@ import heroTop from "@/assets/images/heroTop.png";
 import heroBottom from "@/assets/images/heroBottom.png";
 import newsletterLeft from "@/assets/images/newsletterLeft.png";
 import newsletterRight from "@/assets/images/newsletterRight.png";
+import person1 from "@/assets/images/testimonials/person1.png";
+import person2 from "@/assets/images/testimonials/person2.png";
+import person3 from "@/assets/images/testimonials/person 3.png";
 
 export {
   prada,
@@ -22,4 +25,7 @@ export {
   heroBottom,
   newsletterLeft,
   newsletterRight,
+  person1,
+  person2,
+  person3,
 };
