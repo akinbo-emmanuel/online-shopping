@@ -32,22 +32,8 @@ const testimonials: Testimonial[] = [
   {
     id: 3,
     image: person3,
-    text: `I was looking for. Thank you for making it pleasant and most of all hassle free. So great.`,
+    text: "Items that I ordered were the best investment I ever made. I can't say enough about your quality service.",
     author: "Donn W.",
-    role: "Customer",
-  },
-  {
-    id: 4,
-    image: person1,
-    text: `I was looking for. Thank you for making it pleasant and most of all hassle free. So great.`,
-    author: "Funn W.",
-    role: "Customer",
-  },
-  {
-    id: 5,
-    image: person2,
-    text: `I was looking for. Thank you for making it pleasant and most of all hassle free. So great.`,
-    author: "Main W.",
     role: "Customer",
   },
 ];
