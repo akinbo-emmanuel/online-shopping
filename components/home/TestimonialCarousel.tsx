@@ -24,16 +24,16 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    image: person2,
+    image: person3,
     text: "Just what I was looking for. Thank you for making it painless, pleasant and most of all hassle free! All products are great.",
-    author: "n W.",
+    author: "Megen W.",
     role: "Customer",
   },
   {
     id: 3,
-    image: person3,
+    image: person2,
     text: "Items that I ordered were the best investment I ever made. I can't say enough about your quality service.",
-    author: "Donn W.",
+    author: "Suzan B.",
     role: "Customer",
   },
 ];
