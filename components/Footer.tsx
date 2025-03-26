@@ -33,7 +33,7 @@ const Footer = () => {
 
   return (
     <footer className="pt-8 pb-6 border-t border-[#DEDFE1] text-[#484848]">
-      <div className="max-w-[95vw] 2xl:max-w-[1280px] mx-auto space-y-12 px-5 lg:px-0">
+      <div className="max-w-[95vw] 2xl:max-w-[1280px] mx-auto space-y-12 px-2.5 lg:px-0">
         <div className="flex flex-wrap gap-4 items-center justify-between">
           <p className="text-3xl font-volkhov">FASCO</p>
 
