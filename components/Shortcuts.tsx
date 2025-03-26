@@ -6,7 +6,7 @@ import { ShoppingCartIcon, ArrowUpCircle } from "lucide-react";
 const Shortcuts = () => {
   return (
     <motion.div
-      className="fixed bottom-5 md:bottom-10 right-5 md:right-10 flex flex-col gap-4"
+      className="fixed bottom-5 md:bottom-10 right-5 md:right-10 flex flex-col gap-4 z-50"
       initial={{ opacity: 0, y: 50 }} // Initial state (hidden and slightly below)
       animate={{ opacity: 1, y: 0 }} // Animate to visible and in position
       transition={{ type: "spring", stiffness: 100, damping: 15 }} // Smooth spring animation

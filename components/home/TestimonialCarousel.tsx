@@ -68,14 +68,14 @@ const TestimonialCarousel = () => {
         {/* Navigation Arrows */}
         <button
           onClick={() => navigate("prev")}
-          className="absolute left-[38vw] sm:left-[40vw] md:left-[42vw] lg:left-[43vw] xl:left-[46.75%] bottom-0 -translate-y-1/2 z-20 p-3 bg-white rounded-full cursor-pointer transition-all"
+          className="absolute left-[35vw] sm:left-[38vw] md:left-[39vw] lg:left-[43vw] xl:left-[46.75%] bottom-0 -translate-y-1/2 z-20 p-3 bg-white rounded-full cursor-pointer transition-all"
           style={{ boxShadow: "0px 4px 14px 1px #00000029" }}
         >
           <FaChevronLeft className="w-3.5 h-3.5" />
         </button>
         <button
           onClick={() => navigate("next")}
-          className="absolute right-[38vw] sm:right-[40vw] md:right-[42vw] lg:right-[43vw] xl:right-[46.75%] bottom-0 -translate-y-1/2 z-20 p-3 bg-white rounded-full cursor-pointer transition-all"
+          className="absolute right-[35vw] sm:right-[38vw] md:right-[39vw] lg:right-[43vw] xl:right-[46.75%] bottom-0 -translate-y-1/2 z-20 p-3 bg-white rounded-full cursor-pointer transition-all"
           style={{ boxShadow: "0px 4px 14px 1px #00000029" }}
         >
           <FaChevronRight className="w-3.5 h-3.5" />

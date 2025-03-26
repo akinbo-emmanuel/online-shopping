@@ -4,7 +4,7 @@ import React from "react";
 
 const Newsletter = () => {
   return (
-    <section className="bg-white pt-16 xl:pt-36 pb-12 max-w-[95vw] 2xl:max-w-[1400px] mx-auto flex items-center justify-center xl:justify-between">
+    <section className="bg-white pt-16 xl:pt-36 pb-12 max-w-[95vw] 2xl:max-w-[1400px] mx-auto flex items-center justify-center xl:justify-between px-5 lg:px-0">
       <Image
         src={newsletterLeft}
         alt="Hero Image"
