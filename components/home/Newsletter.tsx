@@ -1,4 +1,4 @@
-import { newsletterLeft, newsletterRight } from "@/constants/images";
+import { images } from "@/constants/images";
 import Image from "next/image";
 import React from "react";
 
@@ -6,7 +6,7 @@ const Newsletter = () => {
   return (
     <section className="bg-white pt-16 xl:pt-36 pb-12 max-w-[95vw] 2xl:max-w-[1400px] mx-auto flex items-center justify-center xl:justify-between">
       <Image
-        src={newsletterLeft}
+        src={images.newsletterLeft}
         alt="Hero Image"
         width={355}
         height={747}
@@ -49,7 +49,7 @@ const Newsletter = () => {
       </div>
 
       <Image
-        src={newsletterRight}
+        src={images.newsletterRight}
         alt="Hero Image"
         width={337}
         height={747}

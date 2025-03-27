@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState } from "react";
-import { person1, person2, person3 } from "@/constants/images";
+import { images } from "@/constants/images";
 import Image, { StaticImageData } from "next/image";
 
 interface Testimonial {
@@ -17,21 +17,21 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    image: person1,
+    image: images.person1,
     text: "You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!",
     author: "James K.",
     role: "Traveler",
   },
   {
     id: 2,
-    image: person3,
+    image: images.person3,
     text: "Just what I was looking for. Thank you for making it painless, pleasant and most of all hassle free! All products are great.",
     author: "Megen W.",
     role: "Customer",
   },
   {
     id: 3,
-    image: person2,
+    image: images.person2,
     text: "Items that I ordered were the best investment I ever made. I can't say enough about your quality service.",
     author: "Suzan B.",
     role: "Customer",

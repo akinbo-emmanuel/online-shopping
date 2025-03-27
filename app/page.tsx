@@ -5,6 +5,7 @@ import Hero from "@/components/home/Hero";
 import Newsletter from "@/components/home/Newsletter";
 import CustomerReviews from "@/components/home/CustomerReviews";
 import Features from "@/components/home/Features";
+import Follow from "@/components/home/Follow";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Brands />
       <Deals />
       <Features />
+      <Follow />
       <CustomerReviews />
       <Newsletter />
       <Footer />

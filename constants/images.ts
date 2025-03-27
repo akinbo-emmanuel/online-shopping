@@ -12,8 +12,14 @@ import newsletterRight from "@/assets/images/newsletterRight.png";
 import person1 from "@/assets/images/testimonials/person1.png";
 import person2 from "@/assets/images/testimonials/person2.png";
 import person3 from "@/assets/images/testimonials/person 3.png";
+import follow1 from "@/assets/images/follow/person1.png";
+import follow2 from "@/assets/images/follow/person2.png";
+import follow3 from "@/assets/images/follow/person3.png";
+import follow4 from "@/assets/images/follow/person4.png";
+import follow5 from "@/assets/images/follow/person5.png";
+import follow6 from "@/assets/images/follow/person6.png";
 
-export {
+export const images = {
   prada,
   louisVuitton,
   denim,
@@ -28,4 +34,10 @@ export {
   person1,
   person2,
   person3,
+  follow1,
+  follow2,
+  follow3,
+  follow4,
+  follow5,
+  follow6,
 };

@@ -1,4 +1,4 @@
-import { heroBottom, heroLeft, heroRight, heroTop } from "@/constants/images";
+import { images } from "@/constants/images";
 import Image from "next/image";
 import React from "react";
 
@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="w-screen max-w-[95vw] 2xl:max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-9 mt-14 mb-7 bg-white">
       {/* Left Image (Hidden on Mobile) */}
       <Image
-        src={heroLeft}
+        src={images.heroLeft}
         alt="Hero Image"
         width={756}
         height={392}
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="space-y-6 lg:space-y-9 flex flex-col justify-between max-w-[426px] lg:max-w-full mx-auto">
         {/* Top Image */}
         <Image
-          src={heroTop}
+          src={images.heroTop}
           alt="Hero Image"
           width={756}
           height={392}
@@ -58,7 +58,7 @@ const Hero = () => {
 
         {/* Bottom Image */}
         <Image
-          src={heroBottom}
+          src={images.heroBottom}
           alt="Hero Image"
           width={756}
           height={392}
@@ -70,7 +70,7 @@ const Hero = () => {
 
       {/* Right Image (Hidden on Mobile) */}
       <Image
-        src={heroRight}
+        src={images.heroRight}
         alt=""
         height={392}
         width={756}
