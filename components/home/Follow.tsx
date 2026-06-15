@@ -2,15 +2,26 @@ import React from "react";
 import { images } from "@/constants/images";
 import Image, { StaticImageData } from "next/image";
 
-const galleryImages: { image: StaticImageData; className: string }[] = [
+const galleryImages: {
+  image: StaticImageData;
+  className: string;
+  desktopOnly?: boolean;
+}[] = [
   { image: images.instagram1, className: "lg:h-[308px] lg:w-[320px]" },
   { image: images.instagram2, className: "lg:h-[380px] lg:w-[256px]" },
   { image: images.instagram3, className: "lg:h-[308px] lg:w-[256px]" },
   { image: images.instagram4, className: "lg:h-[380px] lg:w-[256px]" },
-  { image: images.instagram5, className: "lg:h-[308px] lg:w-[256px]" },
-  { image: images.instagram6, className: "lg:h-[380px] lg:w-[256px]" },
   { image: images.instagram7, className: "lg:h-[308px] lg:w-[320px]" },
+  { image: images.instagram6, className: "lg:h-[380px] lg:w-[256px]" },
+  { image: images.instagram5, className: "lg:h-[308px] lg:w-[256px]" },
+  {
+    image: images.instagram2,
+    className: "lg:h-[380px] lg:w-[256px]",
+    desktopOnly: true,
+  },
 ];
+
+const marqueeImages = [...galleryImages, ...galleryImages];
 
 const Follow = () => {
   return (
@@ -27,15 +38,19 @@ const Follow = () => {
       </div>
 
       <div className="w-full overflow-hidden">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-nowrap items-center justify-center">
-          {galleryImages.map((item, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:w-max lg:min-w-full lg:flex-nowrap lg:items-center lg:justify-start lg:[--animation-duration:45s] lg:animate-scroll lg:hover:[animation-play-state:paused]">
+          {marqueeImages.map((item, index) => (
             <div
               key={index}
-              className={`relative h-[260px] sm:h-[320px] ${item.className}`}
+              className={`relative h-[260px] sm:h-[320px] ${item.className} ${
+                item.desktopOnly || index >= galleryImages.length
+                  ? "hidden lg:block"
+                  : ""
+              }`}
             >
               <Image
                 src={item.image}
-                alt={`Instagram post ${index + 1}`}
+                alt={`Instagram post ${(index % galleryImages.length) + 1}`}
                 fill
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 320px"
                 className="object-cover"

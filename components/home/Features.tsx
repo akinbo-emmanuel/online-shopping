@@ -27,7 +27,10 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="packages" className="shadow-[0px_20px_52.29px_0px_#4444440A] py-12 lg:py-[72px] bg-white">
+    <section
+      id="packages"
+      className="relative z-10 bg-white py-12 shadow-[0px_28px_42px_-24px_#00000033] lg:py-[72px]"
+    >
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center justify-between gap-x-6 gap-y-8 w-screen max-w-[95vw] 2xl:max-w-[1280px] mx-auto">
         {features.map((feature, index) => (
           <div key={index} className="flex items-center gap-3.5">

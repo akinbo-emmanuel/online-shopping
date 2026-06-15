@@ -28,6 +28,7 @@ import arrival4 from "@/assets/images/homepage/arrival-4.png";
 import arrival5 from "@/assets/images/homepage/arrival-5.png";
 import arrival6 from "@/assets/images/homepage/arrival-6.png";
 import promoPeaky from "@/assets/images/homepage/promo-peaky.png";
+import promoPeakyAnnotated from "@/assets/images/homepage/promo-peaky-annotated.png";
 import instagram1 from "@/assets/images/homepage/instagram-1.png";
 import instagram2 from "@/assets/images/homepage/instagram-2.png";
 import instagram3 from "@/assets/images/homepage/instagram-3.png";
@@ -67,6 +68,7 @@ export const images = {
   arrival5,
   arrival6,
   promoPeaky,
+  promoPeakyAnnotated,
   instagram1,
   instagram2,
   instagram3,

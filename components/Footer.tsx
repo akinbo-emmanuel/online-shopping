@@ -29,6 +29,8 @@ const links = [
 ];
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="pt-8 pb-6 border-t border-[#DEDFE1] text-[#484848]">
       <div className="max-w-[95vw] 2xl:max-w-[1280px] mx-auto space-y-12">
@@ -47,7 +49,7 @@ const Footer = () => {
         </div>
 
         <p className="text-xs font-poppins text-center">
-          Copyright © 2022 Xpro . All Rights Reserved.
+          Copyright © {currentYear} Xpro . All Rights Reserved.
         </p>
       </div>
     </footer>
