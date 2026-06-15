@@ -120,7 +120,10 @@ const ProductCard = ({ product }: { product: (typeof products)[number] }) => (
 
 const NewArrivals = () => {
   return (
-    <section id="new-arrivals" className="bg-white py-16 lg:py-28">
+    <section
+      id="new-arrivals"
+      className="scroll-mt-28 bg-white py-16 lg:scroll-mt-32 lg:py-28"
+    >
       <div className="max-w-[95vw] 2xl:max-w-[1280px] mx-auto">
         <div className="max-w-[614px] mx-auto text-center space-y-5">
           <h2 className="font-volkhov text-[#484848] text-4xl md:text-[46px] leading-tight">

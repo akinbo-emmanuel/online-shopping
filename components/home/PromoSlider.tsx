@@ -6,14 +6,14 @@ const PromoSlider = () => {
   return (
     <section className="overflow-hidden bg-[#DADADA]">
       <div className="relative min-h-[570px] bg-[#F8F8F8] lg:h-[570px]">
-        <div className="relative min-h-[420px] lg:absolute lg:inset-y-0 lg:left-0 lg:w-[55%]">
+        <div className="relative aspect-[1024/553] lg:absolute lg:inset-y-0 lg:left-0 lg:aspect-auto lg:w-[73.25%]">
           <Image
             src={images.promoPeakyAnnotated}
             alt="Annotated Peaky Blinders outfit"
             fill
-            sizes="(max-width: 1024px) 100vw, 55vw"
+            sizes="(max-width: 1024px) 100vw, 73vw"
             quality={100}
-            className="object-cover object-center"
+            className="object-contain object-left-bottom lg:object-cover"
           />
         </div>
 

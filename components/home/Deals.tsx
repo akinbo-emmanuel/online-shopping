@@ -118,7 +118,7 @@ const Deals = () => {
   return (
     <section
       id="deals"
-      className="py-16 lg:py-24 overflow-hidden"
+      className="scroll-mt-28 overflow-hidden py-16 lg:scroll-mt-32 lg:py-24"
       style={{
         background: "linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%)",
       }}

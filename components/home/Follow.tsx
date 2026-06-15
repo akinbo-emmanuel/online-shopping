@@ -5,19 +5,38 @@ import Image, { StaticImageData } from "next/image";
 const galleryImages: {
   image: StaticImageData;
   className: string;
-  desktopOnly?: boolean;
 }[] = [
-  { image: images.instagram1, className: "lg:h-[308px] lg:w-[320px]" },
-  { image: images.instagram2, className: "lg:h-[380px] lg:w-[256px]" },
-  { image: images.instagram3, className: "lg:h-[308px] lg:w-[256px]" },
-  { image: images.instagram4, className: "lg:h-[380px] lg:w-[256px]" },
-  { image: images.instagram7, className: "lg:h-[308px] lg:w-[320px]" },
-  { image: images.instagram6, className: "lg:h-[380px] lg:w-[256px]" },
-  { image: images.instagram5, className: "lg:h-[308px] lg:w-[256px]" },
+  {
+    image: images.instagram1,
+    className: "h-[220px] w-[230px] sm:h-[280px] sm:w-[300px] lg:h-[308px] lg:w-[320px]",
+  },
   {
     image: images.instagram2,
-    className: "lg:h-[380px] lg:w-[256px]",
-    desktopOnly: true,
+    className: "h-[280px] w-[200px] sm:h-[340px] sm:w-[236px] lg:h-[380px] lg:w-[256px]",
+  },
+  {
+    image: images.instagram3,
+    className: "h-[220px] w-[200px] sm:h-[280px] sm:w-[236px] lg:h-[308px] lg:w-[256px]",
+  },
+  {
+    image: images.instagram4,
+    className: "h-[280px] w-[200px] sm:h-[340px] sm:w-[236px] lg:h-[380px] lg:w-[256px]",
+  },
+  {
+    image: images.instagram7,
+    className: "h-[220px] w-[230px] sm:h-[280px] sm:w-[300px] lg:h-[308px] lg:w-[320px]",
+  },
+  {
+    image: images.instagram6,
+    className: "h-[280px] w-[200px] sm:h-[340px] sm:w-[236px] lg:h-[380px] lg:w-[256px]",
+  },
+  {
+    image: images.instagram5,
+    className: "h-[220px] w-[200px] sm:h-[280px] sm:w-[236px] lg:h-[308px] lg:w-[256px]",
+  },
+  {
+    image: images.instagram2,
+    className: "h-[280px] w-[200px] sm:h-[340px] sm:w-[236px] lg:h-[380px] lg:w-[256px]",
   },
 ];
 
@@ -38,15 +57,11 @@ const Follow = () => {
       </div>
 
       <div className="w-full overflow-hidden">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:w-max lg:min-w-full lg:flex-nowrap lg:items-center lg:justify-start lg:[--animation-duration:45s] lg:animate-scroll lg:hover:[animation-play-state:paused]">
+        <div className="flex w-max min-w-full flex-nowrap items-center justify-start [--animation-duration:38s] animate-scroll hover:[animation-play-state:paused] lg:[--animation-duration:45s]">
           {marqueeImages.map((item, index) => (
             <div
               key={index}
-              className={`relative h-[260px] sm:h-[320px] ${item.className} ${
-                item.desktopOnly || index >= galleryImages.length
-                  ? "hidden lg:block"
-                  : ""
-              }`}
+              className={`relative shrink-0 ${item.className}`}
             >
               <Image
                 src={item.image}

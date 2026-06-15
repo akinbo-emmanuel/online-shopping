@@ -29,23 +29,28 @@ const Features = () => {
   return (
     <section
       id="packages"
-      className="relative z-10 bg-white py-12 shadow-[0px_28px_42px_-24px_#00000033] lg:py-[72px]"
+      className="relative z-10 scroll-mt-28 bg-white py-12 shadow-[0px_28px_42px_-24px_#00000033] lg:scroll-mt-32 lg:py-[72px]"
     >
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center justify-between gap-x-6 gap-y-8 w-screen max-w-[95vw] 2xl:max-w-[1280px] mx-auto">
+      <div className="mx-auto grid w-screen max-w-[95vw] grid-cols-1 items-stretch gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 2xl:max-w-[1280px]">
         {features.map((feature, index) => (
-          <div key={index} className="flex items-center gap-3.5">
+          <div
+            key={index}
+            className="flex items-center gap-4 rounded-2xl bg-white px-5 py-5 text-left shadow-[0px_14px_35px_-24px_#00000066] lg:rounded-none lg:p-0 lg:shadow-none"
+          >
             <Image
               src={feature.icon}
               alt={feature.title}
               width={50}
               height={50}
-              className="w-[50px] h-[50px] object-contain"
+              className="h-11 w-11 shrink-0 object-contain sm:h-[50px] sm:w-[50px]"
             />
-            <div className="text-[#484848] font-poppins space-y-1">
-              <h4 className="font-medium text-xl/[100%] capitalize">
+            <div className="min-w-0 space-y-1 font-poppins text-[#484848]">
+              <h4 className="text-xl/[1.1] font-medium capitalize">
                 {feature.title}
               </h4>
-              <p className="text-xs md:text-base/[26px]">{feature.description}</p>
+              <p className="text-xs leading-snug md:text-base/[26px]">
+                {feature.description}
+              </p>
             </div>
           </div>
         ))}

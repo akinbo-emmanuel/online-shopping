@@ -50,18 +50,18 @@ const TestimonialCarousel = () => {
 
   return (
     <div className="mt-16 relative overflow-hidden">
-      <div className="relative h-[350px] lg:h-[500px]">
+      <div className="relative h-[560px] sm:h-[380px] lg:h-[500px]">
         {/* Navigation Arrows */}
         <button
           onClick={() => navigate("prev")}
-          className="absolute left-[35vw] sm:left-[38vw] md:left-[39vw] lg:left-[43vw] xl:left-[46.75%] bottom-0 -translate-y-1/2 z-20 p-3 bg-white rounded-full cursor-pointer transition-all"
+          className="absolute bottom-0 left-1/2 z-20 -translate-x-14 -translate-y-1/2 cursor-pointer rounded-full bg-white p-3 transition-all hover:scale-105 lg:left-[43vw] lg:translate-x-0 xl:left-[46.75%]"
           style={{ boxShadow: "0px 4px 14px 1px #00000029" }}
         >
           <FaChevronLeft className="w-3.5 h-3.5" />
         </button>
         <button
           onClick={() => navigate("next")}
-          className="absolute right-[35vw] sm:right-[38vw] md:right-[39vw] lg:right-[43vw] xl:right-[46.75%] bottom-0 -translate-y-1/2 z-20 p-3 bg-white rounded-full cursor-pointer transition-all"
+          className="absolute bottom-0 left-1/2 z-20 translate-x-2 -translate-y-1/2 cursor-pointer rounded-full bg-white p-3 transition-all hover:scale-105 lg:left-auto lg:right-[43vw] lg:translate-x-0 xl:right-[46.75%]"
           style={{ boxShadow: "0px 4px 14px 1px #00000029" }}
         >
           <FaChevronRight className="w-3.5 h-3.5" />
@@ -94,9 +94,9 @@ const TestimonialCarousel = () => {
                   isNext && "shadow-[0px_15px_45px_0px_#2E213D14]"
                 } ${isPrev && "shadow-[0px_14.95px_44.86px_0px_#2E213D14]"} ${
                   isActive && "shadow-[0px_20px_60px_0px_#2E213D14]"
-                } bg-white h-auto lg:h-[25rem] pl-6 sm:pl-8 md:pl-11 lg:pl-[4.25rem] px-6 md:px-6 lg:px-12 py-8 lg:py-16 rounded-[0.625rem] transform transition-all duration-300 flex flex-col sm:flex-row items-center gap-5 md:gap-10 lg:gap-20`}
+                } bg-white h-auto lg:h-[25rem] px-5 py-6 sm:px-8 md:px-6 lg:px-12 lg:py-16 rounded-[0.625rem] transform transition-all duration-300 flex flex-col sm:flex-row items-center gap-5 md:gap-10 lg:gap-20`}
               >
-                <div className="relative w-full max-w-[220px] sm:w-2xs lg:w-[484px]">
+                <div className="relative w-full max-w-[180px] sm:max-w-[220px] sm:w-2xs lg:w-[484px] lg:max-w-none">
                   <Image
                     src={testimonial.image}
                     alt=""
@@ -108,12 +108,12 @@ const TestimonialCarousel = () => {
                   />
                   <div className="absolute bg-[#D9D9D9] -left-2.5 lg:-left-5 -bottom-2.5 lg:-bottom-5 w-full h-full -z-10"></div>
                 </div>
-                <div>
+                <div className="w-full text-center sm:text-left">
                   <div className="space-y-3.5 md:space-y-7">
                     <p className="text-[#484848] text-sm md:text-base leading-relaxed font-poppins">
                       &apos;{testimonial.text}&apos;
                     </p>
-                    <div className="flex gap-1 text-yellow-400 text-base md:text-xl">
+                    <div className="flex justify-center gap-1 text-yellow-400 text-base md:text-xl sm:justify-start">
                       {[...Array(5)].map((_, i) => (
                         <svg
                           key={i}
@@ -134,7 +134,7 @@ const TestimonialCarousel = () => {
                     </div>
                   </div>
 
-                  <div className="w-[50%] h-[1px] bg-[#484848] mt-4 md:mt-8 mb-2 md:mb-4"></div>
+                  <div className="mx-auto h-[1px] w-[50%] bg-[#484848] mt-4 md:mt-8 mb-2 md:mb-4 sm:mx-0"></div>
 
                   <div className="space-y-1.5 lg:space-y-3">
                     <h4 className="text-2xl lg:text-3xl leading-normal font-volkhov text-[#484848]">
