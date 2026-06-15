@@ -18,6 +18,23 @@ import follow3 from "@/assets/images/follow/person3.png";
 import follow4 from "@/assets/images/follow/person4.png";
 import follow5 from "@/assets/images/follow/person5.png";
 import follow6 from "@/assets/images/follow/person6.png";
+import deal1 from "@/assets/images/homepage/deal-1.png";
+import deal2 from "@/assets/images/homepage/deal-2.png";
+import deal3 from "@/assets/images/homepage/deal-3.png";
+import arrival1 from "@/assets/images/homepage/arrival-1.png";
+import arrival2 from "@/assets/images/homepage/arrival-2.png";
+import arrival3 from "@/assets/images/homepage/arrival-3.png";
+import arrival4 from "@/assets/images/homepage/arrival-4.png";
+import arrival5 from "@/assets/images/homepage/arrival-5.png";
+import arrival6 from "@/assets/images/homepage/arrival-6.png";
+import promoPeaky from "@/assets/images/homepage/promo-peaky.png";
+import instagram1 from "@/assets/images/homepage/instagram-1.png";
+import instagram2 from "@/assets/images/homepage/instagram-2.png";
+import instagram3 from "@/assets/images/homepage/instagram-3.png";
+import instagram4 from "@/assets/images/homepage/instagram-4.png";
+import instagram5 from "@/assets/images/homepage/instagram-5.png";
+import instagram6 from "@/assets/images/homepage/instagram-6.png";
+import instagram7 from "@/assets/images/homepage/instagram-7.png";
 
 export const images = {
   prada,
@@ -40,4 +57,21 @@ export const images = {
   follow4,
   follow5,
   follow6,
+  deal1,
+  deal2,
+  deal3,
+  arrival1,
+  arrival2,
+  arrival3,
+  arrival4,
+  arrival5,
+  arrival6,
+  promoPeaky,
+  instagram1,
+  instagram2,
+  instagram3,
+  instagram4,
+  instagram5,
+  instagram6,
+  instagram7,
 };

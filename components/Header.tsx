@@ -1,134 +1,86 @@
 "use client";
 
-import { LucideShoppingBag, Search, Star, User2, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
 
 const links = [
   {
-    name: "home",
+    name: "Home",
     route: "/",
   },
   {
-    name: "shop",
-    route: "/shop",
+    name: "Deals",
+    route: "#deals",
   },
   {
-    name: "products",
-    route: "/products",
+    name: "New Arrivals",
+    route: "#new-arrivals",
+  },
+  {
+    name: "Packages",
+    route: "#packages",
   },
 ];
 
 const Header = () => {
-  const pathname = usePathname();
-  const [isFixed, setIsFixed] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <>
-      <header
-        className={`mx-auto flex items-center justify-between transition-all duration-300 bg-white ${
-          isFixed
-            ? "fixed top-0 left-0 right-0 z-50 shadow-md py-4 px-6 max-w-[90vw] 2xl:max-w-[1250px] rounded-full mt-4 md:mt-8"
-            : "max-w-[95vw] 2xl:max-w-[1280px] mt-8 md:mt-16"
-        }`}
-      >
-        {/* Logo */}
-        <p className="text-[#484848] text-5xl font-volkhov">FASCO</p>
+    <header className="mx-auto flex h-14 w-full max-w-[95vw] 2xl:max-w-[1280px] items-center justify-between bg-white mt-8 md:mt-[70px]">
+      <Link href="/" className="text-[#484848] text-5xl font-volkhov">
+        FASCO
+      </Link>
 
-        {/* Hamburger Menu Icon (Mobile) */}
-        <Sheet>
-          <SheetTrigger className="lg:hidden cursor-pointer">
-            <Menu size={32} />
-          </SheetTrigger>
-          <SheetContent className="flex flex-col items-center justify-center">
-            <SheetTitle className="hidden">Mobile</SheetTitle>
-            <ul className="flex flex-col gap-8">
-              {links.map((link, index) => (
-                <li
-                  key={index}
-                  className={`${
-                    pathname === link.route &&
-                    "pb-1.5 border-b border-[#484848]"
-                  }`}
-                >
-                  <Link href={link.route}>
-                    <p className="capitalize font-poppins text-[#484848] text-2xl">
-                      {link.name}
-                    </p>
+      <Sheet>
+        <SheetTrigger className="lg:hidden cursor-pointer text-[#484848]">
+          <Menu size={32} />
+        </SheetTrigger>
+        <SheetContent className="flex flex-col items-center justify-center gap-10">
+          <SheetTitle className="hidden">Homepage navigation</SheetTitle>
+          <nav>
+            <ul className="flex flex-col items-center gap-8">
+              {links.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.route}
+                    className="font-poppins text-[#484848] text-2xl"
+                  >
+                    {link.name}
                   </Link>
                 </li>
               ))}
-
-              <li>
-                <p className="capitalize font-poppins text-[#484848] text-2xl">
-                  Pages
-                </p>
-              </li>
             </ul>
+          </nav>
 
-            {/* Icons (Mobile) */}
-            <div className="flex items-center gap-6 text-[#484848] text-2xl mt-8">
-              <Search />
-              <User2 />
-              <Star />
-              <LucideShoppingBag />
-            </div>
-          </SheetContent>
-        </Sheet>
-
-        {/* Navigation Links (Desktop) */}
-        <ul className="hidden lg:flex gap-16">
-          {links.map((link, index) => (
-            <li
-              key={index}
-              className={`${
-                pathname === link.route &&
-                "px-2.5 pb-1.5 border-b border-[#484848]"
-              }`}
+          <div className="flex flex-col items-center gap-5 font-poppins">
+            <Link href="/sign-in" className="text-[#484848] text-2xl">
+              Sign in
+            </Link>
+            <Link
+              href="/sign-up"
+              className="bg-black text-white rounded-[10px] px-10 py-4 shadow-[0px_20px_35px_0px_#00000026]"
             >
-              <Link href={link.route}>
-                <p className="capitalize font-poppins text-[#484848]">
-                  {link.name}
-                </p>
-              </Link>
-            </li>
-          ))}
+              Sign Up
+            </Link>
+          </div>
+        </SheetContent>
+      </Sheet>
 
-          <li>
-            <p className="capitalize font-poppins text-[#484848]">Pages</p>
-          </li>
-        </ul>
-
-        {/* Icons (Desktop) */}
-        <div className="hidden lg:flex items-center gap-6 text-[#484848] text-xl">
-          <Search />
-          <User2 />
-          <Star />
-          <LucideShoppingBag />
-        </div>
-      </header>
-
-      {/* Placeholder to prevent layout shift when header becomes fixed */}
-      {isFixed && <div className="h-[96px]"></div>}
-    </>
+      <nav className="hidden lg:flex items-center gap-14 font-poppins text-[#484848]">
+        {links.map((link) => (
+          <Link key={link.name} href={link.route}>
+            {link.name}
+          </Link>
+        ))}
+        <Link href="/sign-in">Sign in</Link>
+        <Link
+          href="/sign-up"
+          className="bg-black text-white rounded-[10px] px-11 py-5 shadow-[0px_20px_35px_0px_#00000026]"
+        >
+          Sign Up
+        </Link>
+      </nav>
+    </header>
   );
 };
 

@@ -6,6 +6,8 @@ import Newsletter from "@/components/home/Newsletter";
 import CustomerReviews from "@/components/home/CustomerReviews";
 import Features from "@/components/home/Features";
 import Follow from "@/components/home/Follow";
+import NewArrivals from "@/components/home/NewArrivals";
+import PromoSlider from "@/components/home/PromoSlider";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Hero />
       <Brands />
       <Deals />
+      <NewArrivals />
+      <PromoSlider />
       <Features />
       <Follow />
       <CustomerReviews />

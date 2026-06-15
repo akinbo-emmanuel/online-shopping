@@ -7,7 +7,7 @@ const Newsletter = () => {
     <section className="bg-white pt-16 xl:pt-36 pb-12 max-w-[95vw] 2xl:max-w-[1400px] mx-auto flex items-center justify-center xl:justify-between">
       <Image
         src={images.newsletterLeft}
-        alt="Hero Image"
+        alt="Fashion model"
         width={355}
         height={747}
         quality={100}
@@ -36,9 +36,9 @@ const Newsletter = () => {
               "0px 105.65px 46.85px 0px #00000008, " +
               "0px 163px 80px 0px #0000000A",
           }}
-          type="text"
-          placeholder="Enter your email"
-          className="p-7 w-full placeholder:text-[#8A8A8A] text-[#484848] lg:text-xl outline-none"
+          type="email"
+          placeholder="michael@ymail.com"
+          className="p-7 w-full placeholder:text-[#8A8A8A] text-[#484848] lg:text-[22px] outline-none"
         />
         <button
           style={{ boxShadow: "0px 20px 35px 0px #00000026" }}
@@ -50,7 +50,7 @@ const Newsletter = () => {
 
       <Image
         src={images.newsletterRight}
-        alt="Hero Image"
+        alt="Fashion model"
         width={337}
         height={747}
         quality={100}

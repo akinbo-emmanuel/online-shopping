@@ -76,7 +76,9 @@ const TestimonialCarousel = () => {
           return (
             <motion.div
               key={testimonial.id}
-              className="absolute top-0 w-full max-w-[95vw] lg:max-w-[864px]"
+              className={`absolute top-0 w-full max-w-[95vw] lg:max-w-[864px] ${
+                !isActive ? "hidden md:block" : ""
+              }`}
               initial={false}
               animate={{
                 left: isPrev ? "25%" : isActive ? "50%" : "75%",
@@ -92,9 +94,9 @@ const TestimonialCarousel = () => {
                   isNext && "shadow-[0px_15px_45px_0px_#2E213D14]"
                 } ${isPrev && "shadow-[0px_14.95px_44.86px_0px_#2E213D14]"} ${
                   isActive && "shadow-[0px_20px_60px_0px_#2E213D14]"
-                } bg-white h-auto lg:h-[25rem] pl-[1.625rem] sm:pl-8 md:pl-11 lg:pl-[4.25rem] px-1.5 sm:px-3 md:px-6 lg:px-12 py-8 lg:py-16 rounded-[0.625rem] transform transition-all duration-300 flex items-center gap-5 md:gap-10 lg:gap-20`}
+                } bg-white h-auto lg:h-[25rem] pl-6 sm:pl-8 md:pl-11 lg:pl-[4.25rem] px-6 md:px-6 lg:px-12 py-8 lg:py-16 rounded-[0.625rem] transform transition-all duration-300 flex flex-col sm:flex-row items-center gap-5 md:gap-10 lg:gap-20`}
               >
-                <div className="relative w-2xs lg:w-[484px]">
+                <div className="relative w-full max-w-[220px] sm:w-2xs lg:w-[484px]">
                   <Image
                     src={testimonial.image}
                     alt=""
