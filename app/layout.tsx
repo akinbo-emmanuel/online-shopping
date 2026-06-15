@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { orbitron, poppins, volkhov } from "./fonts";
 import "./globals.css";
+import { Suspense } from "react";
+import AuthModalManager from "@/components/auth/AuthModalManager";
 import Header from "@/components/Header";
 import Shortcuts from "@/components/Shortcuts";
 import { Analytics } from "@vercel/analytics/react"
@@ -23,6 +25,9 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Suspense fallback={null}>
+          <AuthModalManager />
+        </Suspense>
 
         <Shortcuts />
       </body>

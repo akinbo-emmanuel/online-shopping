@@ -80,11 +80,11 @@ const Header = () => {
             </nav>
 
             <div className="flex flex-col items-center gap-5 font-poppins">
-              <Link href="/sign-in" className="text-[#484848] text-2xl">
+              <Link href="/?auth=sign-in" className="text-[#484848] text-2xl">
                 Sign in
               </Link>
               <Link
-                href="/sign-up"
+                href="/?auth=sign-up"
                 className="bg-black text-white rounded-[10px] px-11 py-5 shadow-[0px_20px_35px_0px_#00000026]"
               >
                 Sign Up
@@ -99,9 +99,9 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
-          <Link href="/sign-in">Sign in</Link>
+          <Link href="/?auth=sign-in">Sign in</Link>
           <Link
-            href="/sign-up"
+            href="/?auth=sign-up"
             className={`bg-black text-white rounded-[10px] shadow-[0px_20px_35px_0px_#00000026] transition-[padding,box-shadow,transform] duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
               isFixed ? "px-8 py-3" : "px-11 py-5"
             }`}
