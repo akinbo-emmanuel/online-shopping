@@ -20,7 +20,7 @@ import follow5 from "@/assets/images/follow/person5.png";
 import follow6 from "@/assets/images/follow/person6.png";
 import deal1 from "@/assets/images/homepage/deal-1.png";
 import deal2 from "@/assets/images/homepage/deal-2.png";
-import deal3 from "@/assets/images/homepage/deal-3.png";
+import deal3 from "@/assets/images/homepage/deal-3-source.jpg";
 import arrival1 from "@/assets/images/homepage/arrival-1.png";
 import arrival2 from "@/assets/images/homepage/arrival-2.png";
 import arrival3 from "@/assets/images/homepage/arrival-3.png";

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { poppins, volkhov } from "./fonts";
+import { orbitron, poppins, volkhov } from "./fonts";
 import "./globals.css";
 import Header from "@/components/Header";
 import Shortcuts from "@/components/Shortcuts";
@@ -16,7 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${volkhov.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${volkhov.variable} ${orbitron.variable}`}
+    >
       <body>
         <Header />
         {children}

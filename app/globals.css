@@ -7,6 +7,7 @@
   :root {
     --font-poppins: "Poppins", sans-serif;
     --font-volkhov: "Volkhov", serif;
+    --font-orbitron: "Orbitron", monospace;
   }
 }
 
@@ -16,6 +17,9 @@
   }
   .font-volkhov {
     font-family: var(--font-volkhov);
+  }
+  .font-orbitron {
+    font-family: var(--font-orbitron);
   }
 }
 
